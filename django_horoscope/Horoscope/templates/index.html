@@ -1,0 +1,220 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Chinese Zodiac</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/heroic-features.css' %}" rel="stylesheet">
+
+</head>
+<body>
+
+{% include "navigation_bar.html" %}
+
+  <div class="container">
+
+    <header class="jumbotron my-3">
+    
+      <h1 class="display-4"> YOUR CHINESE ZODIAC </h1>
+      <p class="lead">The Chinese zodiac is based on the year you were born!</p>
+      <a href="#" class="btn btn-primary btn-lg">
+      {% include "form.html" %}
+      </a>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="{% static 'photo/waran.jpg' %}" alt="My image">
+          <div class="card-body">
+            <h4 class="card-title">{{1.title}}</h4>
+            <p class="card-text">{{1.description}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="/1" class="btn btn-primary">{{1.title}} Daily Horoscope!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img src="{% static 'photo/RAT.png' %}" alt="My image">
+          <div class="card-body">
+            <h4 class="card-title">{{2.title}}</h4>
+            <p class="card-text">{{2.description}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="/2" class="btn btn-primary">{{2.title}} Daily Horoscope!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <h4 class="card-title">{{3.title}}</h4>
+            <p class="card-text">{{3.description}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="/3" class="btn btn-primary">{{3.title}} Daily Horoscope!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <h4 class="card-title">{{4.title}}</h4>
+             <p class="card-text">{{4.description}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="/4" class="btn btn-primary">{{4.title}} Daily Horoscope!</a>
+          </div>
+        </div>
+      </div>
+      
+     <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <h4 class="card-title">{{5.title}}</h4>
+            <p class="card-text">{{5.description}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="/5" class="btn btn-primary">{{5.title}} Daily Horoscope!</a>
+          </div>
+        </div>
+      </div>
+
+     <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <h4 class="card-title">{{6.title}}</h4>
+            <p class="card-text">{{6.description}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="/6" class="btn btn-primary">{{6.title}} Daily Horoscope!</a>
+          </div>
+        </div>
+      </div>      
+    
+    
+      <div class="col-lg-3 col-md-6 mb-4">
+         <div class="card h-100">
+           <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+           <div class="card-body">
+             <h4 class="card-title">{{7.title}}</h4>
+             <p class="card-text">{{7.description}}</p>   
+             </div>
+           <div class="card-footer">
+             <a href="/7" class="btn btn-primary">{{7.title}} Daily Horoscope!</a>
+           </div>
+         </div>
+       </div>
+  
+       <div class="col-lg-3 col-md-6 mb-4">
+         <div class="card h-100">
+           <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+           <div class="card-body">
+             <h4 class="card-title">{{8.title}}</h4>
+             <p class="card-text">{{8.description}}</p>
+           </div>
+           <div class="card-footer">
+             <a href="/8" class="btn btn-primary">{{8.title}} Daily Horoscope!</a>
+           </div>
+         </div>
+       </div>
+       
+      <div class="col-lg-3 col-md-6 mb-4">
+         <div class="card h-100">
+           <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+           <div class="card-body">
+             <h4 class="card-title">{{9.title}}</h4>
+             <p class="card-text">{{9.description}}</p>
+           </div>
+           <div class="card-footer">
+             <a href="/9" class="btn btn-primary">{{9.title}} Daily Horoscope!</a>
+           </div>
+         </div>
+       </div>
+       
+      <div class="col-lg-3 col-md-6 mb-4">
+         <div class="card h-100">
+           <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+           <div class="card-body">
+             <h4 class="card-title">{{10.title}}</h4>
+             <p class="card-text">{{10.description}}</p>
+           </div>
+           <div class="card-footer">
+             <a href="/10" class="btn btn-primary">{{10.title}} Daily Horoscope!</a>
+           </div>
+         </div>
+       </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <div class="card-body">
+            <h4 class="card-title">{{11.title}}</h4>
+            <p class="card-text">{{11.description}}</p>
+          </div>
+          <div class="card-footer">
+            <a href="/11" class="btn btn-primary">{{11.title}} Daily Horoscope!</a>
+          </div>
+        </div>
+      </div>   
+      
+      <div class="col-lg-3 col-md-6 mb-4">
+         <div class="card h-100">
+           <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+           <div class="card-body">
+             <h4 class="card-title">{{12.title}}</h4>
+             <p class="card-text">{{12.description}}</p>
+           </div>
+           <div class="card-footer">
+             <a href="/12" class="btn btn-primary">{{12.title}} Daily Horoscope!</a>
+           </div>
+         </div>
+       </div>
+      </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Ludwik Papaj 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
