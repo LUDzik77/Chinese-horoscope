@@ -54,25 +54,12 @@ def devination_for_a(day, month, zodiac_id, ):
        
     
 def contact_page_view(request, *args, **kwargs):
-    return (render(request, "contact.html", {}))    
+    return (render(request, "contact.html", {}))
 
-# T E S T
-def zodiac_create_view(request, *args, **kwargs):
-    if request.method == "POST":
-        now = datetime.now()
-        day_date = now.strftime("%d %b %Y")        
-        zodiac_ = request.POST.get('Zodiac')
-        obj_dev = Divination.objects.get(id=5)
-        obj_zod = Zodiac.objects.get(id=zodiac_)         
-        my_context = {
-            'description': obj_dev.description,
-            'day_date': day_date,
-            'zodiac_sign': obj_zod,   
-        }        
-        
-        #if user == "mark":
-            #return HttpResponse('hello mark')
-    return (render(request, "zodiac_page.html", my_context))
+def game_page_view(request, *args, **kwargs):
+    return (render(request, "game.html", {}))   
+
+
 
 
 #def zodiac_create_view(request, *args, **kwargs):

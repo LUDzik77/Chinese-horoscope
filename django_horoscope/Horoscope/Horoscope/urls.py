@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from pages.views import home_view, zodiac_page_view, contact_page_view, test_form
+from django.urls import include, path
+from pages.views import home_view, zodiac_page_view, contact_page_view, game_page_view
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
@@ -23,11 +23,11 @@ urlpatterns = [
     path('home/', home_view, name ='home'),
     path('zodiac/', zodiac_page_view, name ='zodiac'),
     path('contact/', contact_page_view, name ='contact'),
-    path("<int:id_>", zodiac_page_view, name ='zodiac2'),   #new
+    path("<int:id_>", zodiac_page_view, name ='zodiac2'), 
+    path("guestbook/", include("guestbook.urls")),
     path('admin/', admin.site.urls),
-    # T E S T
-    path ('form/', test_form, name="form"),
-    path("form/<int:id_>", zodiac_page_view, name ='zodiac2'),
+    path('contact/game/', game_page_view),
+ 
 ]
 
 urlpatterns += staticfiles_urlpatterns()
