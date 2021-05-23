@@ -26,7 +26,7 @@ urlpatterns = [
     path("<int:id_>", zodiac_page_view, name ='zodiac2'), 
     path("guestbook/", include("guestbook.urls")),
     path('admin/', admin.site.urls),
-    path('contact/game/', game_page_view),
+    path('guestbook/game/', game_page_view),
  
 ]
 
