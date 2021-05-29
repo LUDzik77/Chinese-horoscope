@@ -1,7 +1,9 @@
 # Chinese Horoscope
 This is a simple website that let you check your chinese zodiac and read your daily horoscope.
-It has active guestbook and 2 ways of checking the zodiac as well as links and a hidden game :)
-
+* 2 ways of checking your zodiac
+* properly seeded random devination generator
+* active guestbook
+* hidden game
 
 ![GitHub Logo](Zodiacscreenshot.png)
 
