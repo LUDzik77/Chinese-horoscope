@@ -15,19 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from pages.views import home_view, zodiac_page_view, contact_page_view, game_page_view
+from pages.views import home_view, zodiac_page_view
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('', home_view, name ='home'),
     path('home/', home_view, name ='home'),
     path('zodiac/', zodiac_page_view, name ='zodiac'),
-    path('contact/', contact_page_view, name ='contact'),
     path("<int:id_>", zodiac_page_view, name ='zodiac2'), 
     path("guestbook/", include("guestbook.urls")),
-    path('admin/', admin.site.urls),
-    path('guestbook/game/', game_page_view),
- 
+    path('admin/', admin.site.urls) 
 ]
 
 urlpatterns += staticfiles_urlpatterns()

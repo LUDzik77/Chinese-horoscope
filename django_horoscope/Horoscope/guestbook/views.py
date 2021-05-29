@@ -19,6 +19,7 @@ class PostentryCreateView(CreateView):
     template_name = 'guestbook/Postentry_create.html'
     form_class = PostentryModelForm
     queryset = Postentry.objects.all()
+    success_url = '/guestbook'
     
     def form_valid(self, form):
         print(form.cleaned_data)

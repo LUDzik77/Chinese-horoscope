@@ -49,12 +49,8 @@ def zodiac_page_view(request, id_, *args, **kwargs):
 def devination_for_a(day, month, zodiac_id, ):
     all_divination = Divination.objects.all()
     base_number = day*month*zodiac_id
-    wynik = base_number%len(all_divination) 
-    return (all_divination[wynik])    
-       
-    
-def contact_page_view(request, *args, **kwargs):
-    return (render(request, "contact.html", {}))
+    result= base_number%len(all_divination) 
+    return (all_divination[result])    
 
 def game_page_view(request, *args, **kwargs):
     return (render(request, "game.html", {}))   
