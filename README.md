@@ -9,7 +9,7 @@ This is a simple website that let you check your chinese zodiac and read your da
 
 ## Technology
 Webpage written in django & Python 3. 
-I Used Bootstrap template for part of my HTML and CSS and Puzzlescript engine to make a game.
+I used Bootstrap template for part of my HTML and CSS and Puzzlescript engine to make a game.
 
 ## Contributers
 **Ludwik R. Papaj** <ludwikpapaj@gmail.com>
